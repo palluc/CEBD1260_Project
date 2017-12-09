@@ -1,79 +1,36 @@
 # CEBD1260 Project and Final
 
-GITHUB project repository for CEBD1260 class
+GITHUB project repository for CEBD1260 course
 
 
 ### Overview of Dataset ###
+---
+
+==*_ Data files are saved under the subfolder named 'Data' _*==
 
 
-==*_Under folder Data\_*==
-
-
-*1. Online Retail.xlsx*
+*	Online Retail.xlsx*
 
 _Dataset Information_
 
-..*The data contains sale transactions between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail company selling many multi-themed gifts. 
+..* The data contains sale transactions between Dec-010-2010 and Dec-09-2011 for a UK-based and registered non-store online retail company selling many multi-themed gifts. 
 
-..*The dataset format is csv and the variables are: 
-    -InvoiceNo (Invoice number)
-    -StockCode (Product code)
-    -Description (Product name)
-    -Quantity (The quantities of each product)
-    -InvoiceDate (Invice Date)
-    -UnitPrice (Unit price)
-    -CustomerID (Customer number): unique for each customer. 
-    -Country (Country name)
-
-
-..*Dataset URL source:  [Online Retail Data Set](http://archive.ics.uci.edu/ml/datasets/online+retail)
+..* The dataset format is csv and the variables are: 
+    Attribute | Description
+    InvoiceNo | Invoice number
+    StockCode | Product code
+    Description | Product name
+    Quantity | The quantities of each product
+    InvoiceDate | Invoice Date
+    UnitPrice | Unit price
+    CustomerID |Customer number: unique for each customer. 
+    Country | Country name)
 
 
-For the frequent itemset algorithm , a few transactions where extracted within the file so that the code would not error due to the size of the pyspark data object.
+..* Dataset URL source:  [Online Retail Data Set](http://archive.ics.uci.edu/ml/datasets/online+retail)
 
 
-
-
-Support: is the percentage of transactions in T that contain all three '21754', '22748' and '22745' together (20% of all orders had the three items together).
-
-
-
-The rule X => Y holds with support s if s% of transactions in  D contain X and Y. 
-
-Rules that have a s greater than a user-specified support is said to have minimum support.
-
-
-
-
-
-Confidence: is the percentage of transactions in T, containing '21754', '22748', that also contain '22745'. 
-
-In other words, the probability of having '22745', given that '21754', '22748' is already in the basket. (65% of orders having products '21754', '22748', also bought '22745'.)
-
-
-
-When the resulting confidence is smaller than minimum confidence, in this case .40, the association rule  ['21754', '22748'] => ['22745'] is dropped, otherwise it is added to the result. So, the resulting confidence for this itemset  ['21754', '22748', '22745'] is 1 > .40, meaning that invoices with product '22745' also contained products '21754', '22748'.
-
-
-
-
-
-
-The rule X => Y holds with confidence c if c% of the transactions in D that contain X  also contain Y.
-
-Rules that have a c greater than a user-specified confidence is said to have minimum confidence.
-
-
-Reference: 
-https://www.quora.com/What-is-support-and-confidence-in-data-mining
-
-http://wimleers.com/article/fp-growth-powered-association-rule-mining-with-support-for-constraints
-
-
-
-
-
-*2. Filename '1.csv' and '2.csv'*
+*2.  '1.csv' and '2.csv'*
 
 
 _Dataset Information_
@@ -142,6 +99,7 @@ Multilayer_Perceptron_Classifier
 
 
 ### Frequent Itemsets and Association rules ###
+---
 
 Assignment 2 is to program in pyspark the algorithm for Frequent Itemsets and Association rules.  It identifies the 
 
@@ -151,14 +109,11 @@ and to decides on the result based on the support and confidence formula.
 
 
 ### K-means Clustering ###
-
-
-
-
-
+---
 
 
 ### Assigment #4 ###
+---
 
 
 Linear_SVM
@@ -171,6 +126,18 @@ Multilayer_Perceptron_Classifier
 
 
 ### Final Assigment ###
+---
+The jupiter notebook under the folder 'Final' (final_assignment.ipynb) has two questions to answer. 
+
+The **_first part_** of the program classifies data from a cancer diagnostic database to a target variable.  The k-nearest neighbors algorithm was used
+for classifying the data and to find/predict a target attribute for a new observation.
+
+In the training phase the dataset is split into train data and its target data. 
+
+In the testing phase the learning model KNeighborsClassifier is applied and fit to the model with the training and target data.
+
+
+The **_second part_** of the program modifies classifies text to a topic or category.  The support vector machines algorithm was used to classify the data to a target attribute. The exercise also corrects a few bugs that were purposely written into the code.
 
 
 
