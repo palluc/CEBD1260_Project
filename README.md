@@ -115,13 +115,11 @@ and to decides on the result based on the support and confidence formula.
 ### Assigment #4 ###
 ---
 
-
-Linear_SVM
-
-Decision_Tree_Classifier
-
-
-Multilayer_Perceptron_Classifier
+In folder 'Assignment4' there are three jupiter notenotebooks exercises for supervised learning classification in the spark MLlib main guide.
+These algorithms are:
+    1. Linear Support Vector Machine
+    2. Decision Tree Classifier
+    3. Multilayer Perceptron Classifier
 
 
 
@@ -129,7 +127,7 @@ Multilayer_Perceptron_Classifier
 ---
 The jupiter notebook under the folder 'Final' (final_assignment.ipynb) has two questions to answer. 
 
-The **_first part_** of the program classifies data from a cancer diagnostic database to a target variable.  The k-nearest neighbors algorithm was used
+The **_first part_** of the assignmnent is a program classifies data from a cancer diagnostic database to a target variable.  The k-nearest neighbors algorithm was used
 for classifying the data and to find/predict a target attribute for a new observation.
 
 In the training phase the dataset is split into train data and its target data. 
@@ -137,8 +135,9 @@ In the training phase the dataset is split into train data and its target data.
 In the testing phase the learning model KNeighborsClassifier is applied and fit to the model with the training and target data.
 
 
-The **_second part_** of the program modifies classifies text to a topic or category.  The support vector machines algorithm was used to classify the data to a target attribute. The exercise also corrects a few bugs that were purposely written into the code.
+The **_second part_** of the assignment is a program that classifies text to a topic or category.  The support vector machines algorithm was used to classify the data to a target attribute. This exercise also lists corrections to statements in the draft program for five bugs purposely written into the code.
 
+Both of these algorithms are grouped in the supervised learning for classification.
 
 
 
