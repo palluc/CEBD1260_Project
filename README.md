@@ -110,16 +110,18 @@ and to decides on the result based on the support and confidence formula.
 
 ### K-means Clustering ###
 ---
+In this assignment 
+
 
 
 ### Assigment #4 ###
 ---
 
-In folder 'Assignment4' there are three jupiter notenotebooks exercises for supervised learning classification in the spark MLlib main guide.
+In folder 'Assignment4' there are three jupiter notenotebooks exercises for supervised learning classification that is taken from the spark MLlib main guide.
 These algorithms are:
-    1. Linear Support Vector Machine
-    2. Decision Tree Classifier
-    3. Multilayer Perceptron Classifier
+    1.[Linear Support Vector Machine](https://spark.apache.org/docs/latest/ml-classification-regression.html#linear-support-vector-machine)
+    2.[Decision Tree Classifier](https://spark.apache.org/docs/2.1.0/ml-classification-regression.html#decision-tree-classifier)
+    3.[Multilayer Perceptron Classifier](https://spark.apache.org/docs/latest/ml-classification-regression.html#multilayer-perceptron-classifier)
 
 
 
